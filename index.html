@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>可可豆AI選豆網頁控制</title>
+</head>
+<body>
+  <h3>辨識即時畫面</h3>
+<form action="/pic" method="POST">
+   <input type="submit" value="開啟輸送帶及AI辨識">
+</form>
+<form action="/exit" method="POST">
+   <input type="submit" value="關閉輸送帶及AI辨識">
+</form>
+  <img src="{{ url_for('video_feed') }}">
+
+</body>
+</html>
